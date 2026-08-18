@@ -1,202 +1,191 @@
-# 🤖 N.O.V.A. – Neural Omni-Versatile Assistant
+N.O.V.A — Neural Omni-Versatile Assistant
+A futuristic AI assistant interface with wake word detection, voice synthesis, real-time weather, and a sleek cyberpunk aesthetic.
 
-N.O.V.A. (Neural Omni-Versatile Assistant) is a futuristic AI-powered web assistant inspired by advanced AI interfaces like J.A.R.V.I.S. and Iron Man's Stark technology. It combines a modern cyberpunk-inspired UI with voice interaction, customizable themes, AI chat, weather information, memory management, and productivity tools.
+https://img.shields.io/badge/version-3.0-blue https://img.shields.io/badge/license-MIT-green
 
-## ✨ Features
+✨ Features
+AI Chat Interface — Powered by Anthropic's Claude API (Haiku model)
 
-### 💬 AI Assistant
-- AI-powered conversational interface
-- Markdown support for responses
-- Code syntax formatting
-- Typing animations
-- Session history
+Wake Word Detection — Say "Hey Nova" to activate the assistant
 
-### 🎙 Voice Features
-- Browser Text-to-Speech (TTS)
-- Voice selection
-- Wake Word support ("Hey Nova")
-- Clap detection
-- Voice synthesis controls
+Voice Synthesis — Text-to-speech with customizable voices
 
-### 🎨 Customization
-- Multiple futuristic themes
-  - Arc (Blue)
-  - Crimson
-  - Matrix
-  - Gold
-  - Violet
-- Custom AI persona
-- Custom assistant name
-- Personalized greetings
+Real-time Weather — Automatic location detection and weather updates
 
-### 🌍 Live Information
-- Real-time clock
-- Weather information
-- Location detection
-- AI performance metrics
-- Session statistics
+Memory Bank — Save and recall conversation contexts
 
-### 🧠 Memory System
-- Save conversation context
-- Memory bank
-- Restore previous conversations
-- Export chat sessions
+Custom Persona — Personalize the AI's name, subtitle, personality, and greeting
 
-### 🎵 Spotify Integration
-- Spotify authentication
-- Search for songs and artists
-- Music playback controls
+Multiple Themes — Arc (Cyan), Crimson, Matrix (Green), Gold, Violet
 
-### ⚡ Stark Mode
-- Full-screen futuristic dashboard
-- Animated holographic globe
-- Live system information
-- Weather and location display
+Code Execution — Run JavaScript code snippets directly in chat
 
----
+Responsive Design — Works on desktop and mobile devices
 
-## 🖥 Technologies Used
+🚀 Quick Start
+Clone or download this HTML file to your local machine
 
-- HTML5
-- CSS3
-- Vanilla JavaScript (ES6)
-- Web Speech API
-- Speech Synthesis API
-- Local Storage API
-- Fetch API
-- Open Meteo Weather API
-- IPAPI Location API
+Open index.html in your browser (no build tools required)
 
----
+Enter your Anthropic API key when prompted (get one at console.anthropic.com)
 
-## 📁 Project Structure
+Start chatting with N.O.V.A!
 
-```
-project/
-│
-├── index.html
-├── README.md
-└── assets/
-```
+🎯 Usage
+Chat
+Type your message and press Enter to send
 
-Everything is contained within a single HTML file, making the application portable and easy to deploy.
+Use Shift+Enter for new lines
 
----
+Click the ▶ send button or press Enter
 
-## 🚀 Getting Started
+Wake Word
+Click the WAKE button in the header or press Alt+W
 
-### Clone the repository
+Say "Hey Nova" clearly to activate the assistant
 
-```bash
-git clone https://github.com/yourusername/nova-ai-assistant.git
-```
+A visual flash and chime will confirm detection
 
-### Navigate into the project
+Voice
+Click ⚙ VOICE to select from available browser voices
 
-```bash
-cd nova-ai-assistant
-```
+Click 🔊 SPEAK on any AI response for text-to-speech
 
-### Launch
+Click ⏹ STOP to cancel speech
 
-Simply open:
+Persona
+Click 👤 PERSONA to customize:
 
-```
-index.html
-```
+AI Name
 
-in any modern web browser.
+Subtitle
 
-No installation or build tools are required.
+Personality prompt
 
----
+Greeting message
 
-## 🌐 Browser Support
+Memory
+Click ◈ SAVE CONTEXT to store recent conversation
 
-Recommended browsers:
+Click any memory entry to inject it into the current conversation
 
-- Google Chrome ✅
-- Microsoft Edge ✅
-- Brave ✅
+Delete memories with the ✕ button
 
-Firefox and Safari may have limited support for some Web Speech features.
+Theme
+Click 🎨 THEME to switch between 5 color schemes
 
----
+Weather
+Automatically detects your location via IP
 
-## 📸 Features Overview
+Shows current temperature, conditions, humidity, wind, and feels-like temperature
 
-- Futuristic Iron Man inspired UI
-- AI chat interface
-- Voice assistant
-- Wake word detection
-- Weather dashboard
-- Spotify integration
-- Memory system
-- Multiple UI themes
-- Responsive design
-- Export conversations
+🔧 Configuration
+API Key
+The Anthropic API key is stored locally in your browser's localStorage. You can reset it by clearing your browser data for this site.
 
----
+Storage
+All data is stored locally:
 
-## 🔒 Privacy
+API Key
 
-N.O.V.A. stores user preferences locally using the browser's Local Storage.
+Persona settings
 
-Stored data includes:
+Conversation memories
 
-- Theme
-- Voice selection
-- Persona
-- Saved memories
-- Session preferences
+Voice preferences
 
-No personal information is transmitted unless external APIs are used.
+Theme preference
 
----
+🛠️ Technical Details
+Built With
+Vanilla HTML/CSS/JavaScript
 
-## 🔮 Future Improvements
+Anthropic Claude API (Haiku model)
 
-- OpenAI / Anthropic integration
-- Offline AI support
-- Local LLM support (Ollama)
-- Calendar integration
-- Email assistant
-- Smart home controls
-- File upload support
-- Vision capabilities
-- Plugin system
-- Mobile application
+Web Speech API (Speech Recognition & Synthesis)
 
----
+Open-Meteo Weather API
 
-## 👨‍💻 Author
+IPAPI.co for location detection
 
-**Ronaldo Jansen**
+Browser Support
+Chrome/Edge (recommended)
 
-Software Developer | AI Enthusiast
+Firefox
 
-Portfolio:
-https://naldo1818.github.io/Ronaldoprofile/
+Safari (limited wake word support)
 
-GitHub:
-https://github.com/naldo1818
+Privacy
+No data is sent to any server except:
 
----
+Anthropic API (your chat messages)
 
-## 📜 License
+Open-Meteo API (weather requests)
 
-This project is licensed under the MIT License.
+IPAPI.co (location detection)
 
-Feel free to use, modify, and contribute.
+All settings and memories are stored locally in your browser
 
----
+📝 Keyboard Shortcuts
+Shortcut	Action
+Enter	Send message
+Shift+Enter	New line in input
+Alt+W	Toggle wake word detection
+🤖 Persona Examples
+Default
+text
+You are N.O.V.A., a highly advanced AI. Intelligent, articulate, and precise. 
+Speak with calm confidence and occasional dry wit. Address user as "Sir".
+Creative
+text
+You are a poetic AI with a flair for dramatic language. 
+Respond with vivid imagery and philosophical insights.
+Technical
+text
+You are a precise, technical AI expert. Provide detailed, accurate information 
+with code examples and technical explanations. Be concise and factual.
+🎨 Theme Colors
+Theme	Primary	Background	Accent
+ARC	Cyan (#00d4ff)	Dark Blue	Cyan Glow
+CRIMSON	Red (#ff3060)	Dark Red	Red Glow
+MATRIX	Green (#00ff41)	Dark Green	Green Glow
+GOLD	Amber (#f0a500)	Dark Amber	Gold Glow
+VIOLET	Purple (#b060ff)	Dark Purple	Purple Glow
+📦 Export/Import
+Click 📤 EXPORT SESSION to download your conversation as a JSON file
 
-## ⭐ Acknowledgements
+The export includes conversation history, timestamp, persona settings, and message count
 
-Inspired by:
+⚠️ Known Limitations
+Wake word detection accuracy depends on browser support and microphone quality
 
-- Iron Man's J.A.R.V.I.S.
-- Stark Industries HUD interfaces
-- Modern AI Assistants
-- Cyberpunk UI design
-- Futuristic dashboard concepts
+Voice synthesis quality varies by browser and operating system
+
+Anthropic API requires a valid API key (free tier available)
+
+Some browsers may require HTTPS for microphone access
+
+🔮 Future Enhancements
+Multi-language support
+
+Voice conversation mode (speak & listen)
+
+Plugin system for third-party integrations
+
+Conversation search
+
+Markdown rendering improvements
+
+📄 License
+MIT License — feel free to use, modify, and distribute!
+
+🙏 Acknowledgments
+Anthropic for the Claude API
+
+Open-Meteo for weather data
+
+IPAPI for location detection
+
+Google Fonts for Orbitron, Share Tech Mono, and Rajdhani fonts
+
+Built with ❤️ for the future of human-AI interaction
